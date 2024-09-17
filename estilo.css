@@ -1,0 +1,63 @@
+/*Interface*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+
+header {
+    padding: 25px 4%;
+}
+
+header>.interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>ul {
+    list-style-type: none;
+}
+
+.nav-bar>ul>li {
+    display: inline-block;
+    padding: 0 35px;
+}
+
+a {
+    color: #808080;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+a:hover {
+    color: red;
+    transform: scale(1.15);
+}
+
+.idioma>a {
+    display: inline-block;
+    width: 30px;
+    margin-bottom: 80px;
+    padding: 0 3px;
+}
+
+/* RESPONSIVIDADE NO HEADER */
