@@ -5,11 +5,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 body {
-    background-color: #000;
+    background-color: black;
     height: 100vh;
 }
 
@@ -18,10 +19,9 @@ body {
     margin: 0 auto;
 }
 
-/*CABEÇALHO*/
-
+/*HEADER SO SITE*/
 header {
-    padding: 25px 4%;
+    padding: 40px 4%;
 }
 
 header>.interface {
@@ -30,34 +30,103 @@ header>.interface {
     align-items: center;
 }
 
-header>ul {
+header a {
+    color: #A9A9A9;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header nav ul {
     list-style-type: none;
 }
 
-.nav-bar>ul>li {
+header nav ul li {
     display: inline-block;
-    padding: 0 35px;
-}
-
-a {
-    color: #808080;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    display: inline-block;
-    transition: .3s;
+    padding: 0 100px;
 }
 
 a:hover {
-    color: red;
-    transform: scale(1.15);
+    color: rgb(233, 76, 178);
+    transform: scale(1.10);
 }
 
-.idioma>a {
-    display: inline-block;
-    width: 30px;
-    margin-bottom: 80px;
-    padding: 0 3px;
+header .button button {
+    font-family: 'Bebas Neue';
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #c6c5c5;
+    background-color: rgb(233, 76, 178);
+    border-radius: 30px;
+    cursor: pointer;
+    border: rgb(233, 76, 178);
 }
 
-/* RESPONSIVIDADE NO HEADER */
+header .button button:hover {
+    box-shadow: 0px 0px 8px rgb(233, 76, 178);
+}
+
+/*ESTILO TOPO DO SITE*/
+main {
+    padding: 30px 4%;
+}
+
+main .interface-topo-site {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+main .escrita-topo h1 {
+    color: rgb(233, 76, 178);
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    padding: 20px 0px;
+}
+
+
+main .escrita-topo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    gap: 10px;
+}
+
+main .escrita-topo p span {
+    color: rgb(233, 76, 178);
+    font-size: 30px;
+}
+
+main .escrita-topo h2 {
+    color: rgb(233, 76, 178);
+    padding-top: 08px;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+
+main .rede-sociais h3 {
+    color: rgb(233, 76, 178);
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    padding-top: 200px;
+
+}
+
+main .rede-sociais img {
+    padding: 10px 10px;
+}
+
+main .rede-sociais img:hover {
+    transform: scale(1.20);
+    transition: .4s;
+}
+
+main .imagem-priciapal-topo img {
+    width: 600px;
+    border-radius: 20px;
+}
